@@ -17,8 +17,5 @@ fn main() {
 fn is_palindrome(candidate: i32) -> bool {
     let str = candidate.to_string();
     let rev = str.chars().rev().collect::<String>();
-    if rev == str {
-       return true;
-    }
-    false
+    rev == str
 }
